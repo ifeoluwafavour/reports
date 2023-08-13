@@ -20,6 +20,13 @@ I also noticed the bot was hosted in a flask app. Is this necessary?
 def start(message):
 	bot.reply_to(message, 'Welcome to this bot')
 
+markup = types.ReplyKeyboardMarkup(resize_keyboard=True) #makes buttons to take the size of the phone screen
+itembtn1 = types.KeyboardButton('Order reports')
+itembtn2 = types.KeyboardButton('Account)
+itembtn3 = types.KeyboardButton('Order History')
+itembtn4 = types.KeyboardButton('Support')
+markup.add(itembtn1, itembtn2, itembtn3, itembtn4)
+
 @bot.message_handler(commands=['exit'])
 def exit(message):
 	bot.reply_to(message, 'Goodbye')
