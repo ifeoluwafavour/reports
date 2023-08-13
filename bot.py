@@ -22,7 +22,7 @@ def start(message):
 
 markup = types.ReplyKeyboardMarkup(resize_keyboard=True) #makes buttons to take the size of the phone screen
 itembtn1 = types.KeyboardButton('Order reports')
-itembtn2 = types.KeyboardButton('Account)
+itembtn2 = types.KeyboardButton('Account')
 itembtn3 = types.KeyboardButton('Order History')
 itembtn4 = types.KeyboardButton('Support')
 markup.add(itembtn1, itembtn2, itembtn3, itembtn4)
